@@ -181,22 +181,44 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <h2 class="slide-title">「暗さ」と「DoF」のジレンマ解消</h2>
-            <div class="two-column">
-                <div class="image-wrapper contain">
-                    <img src="dof_comparison.png" alt="被写界深度の比較">
+    <section style="background-color: #fff;">
+    <div class="container">
+        <h2 class="slide-title">「暗さ」と「DoF」の物理的限界を打破</h2>
+        <div class="two-column" style="grid-template-columns: 1.2fr 1fr; gap: 60px;">
+            <div class="image-wrapper contain" style="height: 500px; border: none; box-shadow: none;">
+                <img src="dof_comparison.png" alt="被写界深度の比較：従来 vs 液体レンズ" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            
+            <div>
+                <h3>明るさを保ったまま全域をカバー</h3>
+                <p>
+                    従来の光学系では、深い被写界深度（DoF）を得るために絞りを絞り込む必要があり、結果として画像が暗くなるという致命的な欠点がありました。
+                </p>
+
+                <div class="tiled-box" style="border-left: 5px solid #ccc; background: #f9f9f9;">
+                    <h4 style="margin-top:0; color:#666;">従来方式：静的なトレードオフ</h4>
+                    <p style="font-size: 0.95rem;">
+                        DoFを稼ぐために絞ると光量が不足。露光時間を延ばすと検査速度（スループット）が低下し、ゲインを上げるとノイズが増大します。
+                    </p>
                 </div>
-                <div>
-                    <h3>明るさを保ったまま全域カバー</h3>
-                    <p>液体レンズは絞りを開放したまま、高速でピントをスキャンすることができます。</p>
-                    <p><strong>従来方式:</strong> DoFを稼ぐために絞ると画像が暗くなり、スループットが低下します。</p>
-                    <p><strong>液体レンズ:</strong> 明るい画像のまま、瞬時に多点ピント撮影を行い、空間全体を把握可能です。</p>
+
+                <div class="tiled-box" style="border-left: 5px solid var(--accent-gold); background: #fdfbe7;">
+                    <h4 style="margin-top:0; color:var(--primary-green);">液体レンズ：動的な解決（フォーカススキャン）</h4>
+                    <p style="font-size: 0.95rem;">
+                        <strong>絞りを開放（明るい状態）</strong>したまま、ミリ秒単位でピント位置を高速スキャン。
+                        明るい画像のまま多点ピント撮影を行い、空間全体を瞬時に把握します。
+                    </p>
                 </div>
+
+                <ul class="feature-list" style="margin-top: 20px; font-size: 0.9rem; color: #444;">
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-gold);"></i> <strong>スループット向上:</strong> Z軸の物理移動待ちをゼロ化</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-gold);"></i> <strong>高S/N比:</strong> 潤沢な光量によるクリアな画質</li>
+                    <li><i class="fa-solid fa-check" style="color:var(--accent-gold);"></i> <strong>3Dデータ活用:</strong> 深度マップの取得も容易</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section>
         <div class="container">

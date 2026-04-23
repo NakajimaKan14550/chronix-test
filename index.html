@@ -450,8 +450,62 @@
 </body>
 </html>
 
-
 <section style="padding: 100px 20px; background: #ffffff; font-family: 'Noto Sans JP', sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+        
+        <div style="margin-bottom: 70px;">
+            <h2 style="color: #0d4d4d; border-left: 8px solid #d4af37; padding-left: 20px; font-size: 32px; font-weight: 700; margin-bottom: 30px;">1. DoF(被写界深度)の再定義</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: flex-start;">
+                <div style="flex: 1.2; min-width: 350px;">
+                    <h3 style="color: #0d4d4d; font-size: 24px; margin-bottom: 20px; line-height: 1.4;">「ピントが合っている奥行き」</h3>
+                    <p style="color: #475569; line-height: 1.8; font-size: 17px; margin-bottom: 25px;">
+                        DoFとは、写真や映像においてピントが合っているように見える範囲のことです。半導体検査ではこの「奥行き」の制御が歩留まりを左右します。
+                    </p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border-top: 4px solid #0d4d4d;">
+                            <strong style="color: #0d4d4d; display: block; margin-bottom: 8px;">深いDoF (Deep DoF)</strong>
+                            <p style="margin: 0; font-size: 14px; color: #64748b;">広範囲にピントが合う。全体像の把握に有効。</p>
+                        </div>
+                        <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border-top: 4px solid #d4af37;">
+                            <strong style="color: #0d4d4d; display: block; margin-bottom: 8px;">浅いDoF (Shallow DoF)</strong>
+                            <p style="margin: 0; font-size: 14px; color: #64748b;">範囲が狭い。ボケやすいが、特定層の微細欠陥を強調可能。</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="flex: 0.8; min-width: 300px; background: #fdfbe7; padding: 35px; border-radius: 20px; border-left: 6px solid #d4af37; box-shadow: 0 10px 30px rgba(212,175,55,0.1);">
+                    <p style="margin: 0; color: #0d4d4d; font-weight: 700; font-size: 20px; line-height: 1.6;">
+                        <span style="font-size: 28px; color: #d4af37; vertical-align: middle; margin-right: 5px;">💡</span> 重要：<br>
+                        液体レンズは、このDoFを「物理的な移動なし」に電圧だけで瞬時に切り替えます。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <h3 style="color: #0d4d4d; font-size: 22px; font-weight: 700; margin-bottom: 35px; text-align: center; letter-spacing: 0.05em;">DoFを決定する物理的3要素</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <div style="background: #ffffff; padding: 30px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="color: #d4af37; font-size: 24px; margin-bottom: 15px;">①</div>
+                    <h4 style="margin: 0 0 12px; color: #0d4d4d; font-size: 18px;">絞り (アパーチャ)</h4>
+                    <p style="margin: 0; font-size: 15px; color: #64748b; line-height: 1.7;">絞りを開くとDoFは浅くなり、絞ると深くなる。光量と解像度のトレードオフを決定する核心要素。</p>
+                </div>
+                <div style="background: #ffffff; padding: 30px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="color: #d4af37; font-size: 24px; margin-bottom: 15px;">②</div>
+                    <h4 style="margin: 0 0 12px; color: #0d4d4d; font-size: 18px;">焦点距離</h4>
+                    <p style="margin: 0; font-size: 15px; color: #64748b; line-height: 1.7;">望遠になるほどDoFは浅くなり、広角になるほど深くなる。高倍率検査ほどピント合わせの難度が増大。</p>
+                </div>
+                <div style="background: #ffffff; padding: 30px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="color: #d4af37; font-size: 24px; margin-bottom: 15px;">③</div>
+                    <h4 style="margin: 0 0 12px; color: #0d4d4d; font-size: 18px;">撮影距離</h4>
+                    <p style="margin: 0; font-size: 15px; color: #64748b; line-height: 1.7;">被写体に近づくほどDoFは極端に浅くなる。ナノメートルルール化が進む近接検査における最大の障壁。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 100px 20px; background: #f8fafc; font-family: 'Noto Sans JP', sans-serif;">
     <div style="max-width: 1100px; margin: 0 auto;">
         <div style="margin-bottom: 50px;">
             <h2 style="color: #0d4d4d; border-left: 8px solid #d4af37; padding-left: 20px; font-size: 32px; font-weight: 700;">「暗さ」と「DoF」の物理的限界を打破</h2>
@@ -459,7 +513,7 @@
         
         <div style="display: flex; flex-wrap: wrap; gap: 60px; align-items: center;">
             <div style="flex: 1.1; min-width: 380px;">
-                <div style="position: relative; background: #f8fafc; border-radius: 20px; padding: 20px;">
+                <div style="position: relative; background: #ffffff; border-radius: 20px; padding: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.05);">
                     <img src="dof_comparison.png" alt="DoF比較" style="width: 100%; height: auto; border-radius: 10px;">
                     <p style="text-align: center; font-size: 13px; color: #94a3b8; margin-top: 15px;">※絞り込みによる光量不足と液体レンズの比較イメージ</p>
                 </div>
@@ -468,7 +522,7 @@
             <div style="flex: 0.9; min-width: 350px;">
                 <h3 style="color: #0d4d4d; font-size: 24px; margin-bottom: 25px; line-height: 1.4;">明るさを保ったまま<br>全域をカバーする</h3>
                 <p style="line-height: 1.8; color: #475569; font-size: 16px;">
-                    従来の光学系では、DoF（被写界深度）を得るために「絞り込む」必要があり、結果として画像が暗くなる致命的な欠点がありました。これは露光時間の延長を招き、スループットを劇的に低下させます。
+                    従来の光学系では、DoFを得るために「絞り込む」必要があり、結果として画像が暗くなる致命的な欠点がありました。これは露光時間の延長を招き、スループットを劇的に低下させます。
                 </p>
                 <div style="background: #fdfbe7; padding: 30px; border-radius: 16px; border-left: 6px solid #d4af37; margin-top: 30px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);">
                     <strong style="color: #0d4d4d; font-size: 19px; display: block; margin-bottom: 12px;">液体レンズ：フォーカススキャン</strong>

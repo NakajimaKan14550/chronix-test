@@ -640,7 +640,7 @@
     </section>
 
 
- <div style="
+<div style="
     max-width: 600px;
     margin: 0 auto;
     background: #ffffff;
@@ -657,40 +657,50 @@
         border-bottom: 1px solid #e2e8f0;
     ">
         <div style="display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 10px;">
-            <span style="background: #10b981; color: white; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">JP</span>
-            <span style="border: 1px solid #e2e8f0; color: #64748b; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; background: white;">EN</span>
+            <span style="background: #10b981; color: white; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 700;">JP</span>
+            <span style="border: 1px solid #e2e8f0; color: #64748b; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; background: white;">EN</span>
         </div>
-        <h2 style="
-            margin: 0;
-            color: #10b981;
-            font-size: 26px;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-        ">
-            JORYU AI Expert
-        </h2>
+        <h2 style="margin: 0; color: #10b981; font-size: 26px; font-weight: 700; letter-spacing: 0.05em;">JORYU AI Expert</h2>
     </div>
 
     <div style="padding: 40px;">
         
         <div style="margin-bottom: 25px;">
             <label style="display: block; font-weight: 700; color: #334155; margin-bottom: 10px; font-size: 15px;">製品カテゴリー</label>
-            <select style="
-                width: 100%;
-                padding: 14px 16px;
-                border-radius: 12px;
-                border: 1.5px solid #e2e8f0;
-                background-color: #f8fafc;
-                font-size: 15px;
-                color: #475569;
-                appearance: none;
-                background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%20fill%3D%22none%20stroke%3D%22%2394a3b8%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');
-                background-repeat: no-repeat;
-                background-position: right 15px center;
-                background-size: 18px;
-            ">
-                <option>選択してください / Select Category</option>
-            </select>
+            <div style="position: relative; width: 100%;">
+                <select style="
+                    width: 100%;
+                    height: 50px;
+                    padding: 0 40px 0 16px;
+                    border-radius: 12px;
+                    border: 1.5px solid #e2e8f0;
+                    background-color: #f8fafc;
+                    font-size: 15px;
+                    color: #475569;
+                    cursor: pointer;
+                    display: block;
+                    box-sizing: border-box;
+                    /* ブラウザのデフォルト矢印を消し、位置を安定させる */
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                ">
+                    <option value="" disabled selected>選択してください / Select Category</option>
+                    <option value="liquid-lens">液体レンズ (Varioptic)</option>
+                    <option value="optical-unit">光学ユニット</option>
+                    <option value="driver-ic">ドライバIC / 制御関連</option>
+                    <option value="other">その他</option>
+                </select>
+                <div style="
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                    color: #94a3b8;
+                    font-size: 12px;
+                ">▼</div>
+            </div>
         </div>
 
         <div style="margin-bottom: 25px;">
@@ -705,6 +715,7 @@
                 font-size: 15px;
                 resize: none;
                 box-sizing: border-box;
+                display: block;
             "></textarea>
         </div>
 
@@ -712,25 +723,14 @@
             <label style="display: block; font-weight: 700; color: #334155; margin-bottom: 10px; font-size: 15px;">ユーザー名 / 会社名</label>
             <input type="text" placeholder="任意：山田 太郎 / 株式会社JORYU" style="
                 width: 100%;
-                padding: 14px 16px;
+                height: 50px;
+                padding: 0 16px;
                 border-radius: 12px;
                 border: 1.5px solid #e2e8f0;
                 background-color: #f8fafc;
                 font-size: 15px;
                 box-sizing: border-box;
-            ">
-        </div>
-
-        <div style="margin-bottom: 40px;">
-            <label style="display: block; font-weight: 700; color: #334155; margin-bottom: 10px; font-size: 15px;">回答の送付先メールアドレス</label>
-            <input type="email" placeholder="任意：example@joryu.co.jp" style="
-                width: 100%;
-                padding: 14px 16px;
-                border-radius: 12px;
-                border: 1.5px solid #e2e8f0;
-                background-color: #f8fafc;
-                font-size: 15px;
-                box-sizing: border-box;
+                display: block;
             ">
         </div>
 

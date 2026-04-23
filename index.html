@@ -240,31 +240,217 @@
         </div>
     </section>
 
-    <section class="sophisticated-green">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 60px;">
-                <span style="background: var(--light-green); color: var(--accent-gold); padding: 5px 20px; border-radius: 20px; font-weight: bold; letter-spacing: 2px;">CORE TECHNOLOGY</span>
-                <h2 style="margin-top: 20px;">Focal Sweep Mode</h2>
-                <p style="font-size: 20px; opacity: 0.9;">屈折力の連続制御により「セトリング時間ゼロ」を実現する独自の高速撮像ソリューション。</p>
-            </div>
-            <div class="two-column" style="grid-template-columns: 1.2fr 1fr;">
-                <div class="image-wrapper" style="background: #fff; padding: 25px;">
-                    <img src="sweep.png" alt="Sweep Mode Analysis" style="object-fit: contain;">
-                </div>
-                <div>
-                    <div class="feature-item" style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border-left: 6px solid var(--accent-gold); margin-bottom: 20px;">
-                        <h3 style="color: var(--accent-gold);">待機時間の完全排除</h3>
-                        <p>従来の「移動→静止」を待つ必要がありません。屈折力を流しながら連続撮影を行うため、スループットが劇的に向上します。</p>
-                    </div>
-                    <div class="feature-item" style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border-left: 6px solid var(--accent-gold);">
-                        <h3 style="color: var(--accent-gold);">全域ジャストピント</h3>
-                        <p>無限遠から近距離までを一瞬で捉え、あらゆる高さの対象物をオンザフライで解析可能です。</p>
-                    </div>
-                </div>
+    
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweep Mode | Varioptic 液体レンズの核心技術</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #0d4d4d;
+            --accent-gold: #d4af37;
+            --text-dark: #1e293b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .label {
+            display: inline-block;
+            background: var(--primary-green);
+            color: var(--accent-gold);
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 700;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            color: var(--primary-green);
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        .lead {
+            font-size: 18px;
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* メインコンテンツエリア */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 850px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+
+        /* 画像エリア */
+        .image-card {
+            background: var(--white);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .image-caption {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #94a3b8;
+            text-align: center;
+        }
+
+        /* テキストエリア */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border-left: 6px solid var(--accent-gold);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .feature-item h3 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+            color: var(--primary-green);
+        }
+
+        .feature-item p {
+            margin: 0;
+            font-size: 15px;
+            color: #475569;
+        }
+
+        .highlight-box {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .highlight-box h2 {
+            color: var(--accent-gold);
+            margin-top: 0;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="label">CORE TECHNOLOGY</span>
+        <h1>Focal Sweep Mode</h1>
+        <p class="lead">屈折力の連続制御により「セトリング時間ゼロ」を実現する、液体レンズ独自の高速撮像ソリューション。</p>
+    </header>
+
+    <div class="content-grid">
+        <div class="image-card">
+            <img src="sweep.png" alt="Wavefront aberration measurement during focal sweeping">
+            <p class="image-caption">図：スウィープ動作中の屈折力変化(青)と波面収差(赤)の推移</p>
+            <div style="margin-top: 20px; padding: 15px; background: #f1f5f9; border-radius: 8px; font-size: 14px;">
+                <strong>グラフの解析：</strong> 屈折力が直線的に変化している最中でも、波面収差（赤線）が低く一定に保たれていることが分かります。これは「動きながら撮っても像がボケない」技術的証拠です。
             </div>
         </div>
-    </section>
 
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>待機時間の完全排除</h3>
+                <p>従来のモーター駆動のように「移動→静止」を待つ必要がありません。屈折力を流しながら連続撮影を行うため、スループットが劇的に向上します。</p>
+            </div>
+            <div class="feature-item">
+                <h3>全域ジャストピント</h3>
+                <p>無限遠から近距離までピントをスウィープさせながら画像を取得。あらゆる高さの対象物を一瞬で捉え、オンザフライで解析可能です。</p>
+            </div>
+            <div class="feature-item">
+                <h3>高度な光学品質の維持</h3>
+                <p>動作中も光学性能が安定しているため、2MP以上の高精細センサーのポテンシャルを100%引き出し、精緻なデコードを実現します。</p>
+            </div>
+            <div class="feature-item">
+                <h3>柔軟なパラメーター設定</h3>
+                <p>用途に応じ、スウィープの速度やピント範囲をソフトウェア上で自由に変更可能。検査ラインの仕様変更にも即座に対応します。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <h2>物理の壁を、技術で超える。</h2>
+        <p>Variopticのスウィープモードは、物流・半導体検査・バイオメトリクスなど、スピードと精度が同時に求められる現場に革新をもたらします。</p>
+    </div>
+
+    <footer class="footer-note">
+        &copy; 2024 Chronix Inc. | Powered by Varioptic Technology
+    </footer>
+</div>
+
+</body>
+</html>
+
+    
     <section>
         <div class="container">
             <h2 class="slide-title">「暗さ」と「DoF」の物理的限界を打破</h2>

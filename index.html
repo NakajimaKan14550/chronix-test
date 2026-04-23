@@ -450,26 +450,58 @@
 </body>
 </html>
 
-    
-    <section>
+ <section style="background: #ffffff; padding: 100px 0;">
         <div class="container">
             <h2 class="slide-title">「暗さ」と「DoF」の物理的限界を打破</h2>
-            <div class="two-column" style="grid-template-columns: 1.2fr 1fr;">
-                <div class="image-wrapper contain" style="border: none; box-shadow: none;">
-                    <img src="dof_comparison.png" alt="DoF比較">
-                </div>
+            
+            <div class="two-column" style="grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: start;">
                 <div>
-                    <h3>明るさを保ったまま全域をカバー</h3>
-                    <p>従来の光学系では、DoFを得るために絞り込む必要があり、画像が暗くなる致命的欠点がありました。</p>
-                    <div class="tiled-box" style="border-left: 5px solid var(--accent-gold); background: #fdfbe7;">
-                        <h4 style="color:var(--light-green);">液体レンズ：フォーカススキャン</h4>
-                        <p style="font-size: 0.95rem;">絞りを開放したままミリ秒単位でスキャン。明るい画像のまま多点撮影を行い、空間全体を瞬時に把握します。</p>
+                    <div class="image-wrapper contain" style="border: none; box-shadow: none; background: transparent; margin-bottom: 30px;">
+                        <img src="dof_comparison.png" alt="DoF比較" style="width: 100%; height: auto;">
                     </div>
+                    
+                    <div class="tiled-box" style="border-left: 5px solid var(--accent-gold); background: #fdfbe7; padding: 25px;">
+                        <h4 style="color:var(--primary-green); margin-top: 0; font-size: 1.2rem;">
+                            <i class="fa-solid fa-microscope" style="margin-right: 10px;"></i>
+                            液体レンズ：フォーカススキャン
+                        </h4>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: #334155;">
+                            絞りを開放したまま、ms単位でピント位置を高速スキャン（V-sweep）。明るい画像のまま多点撮影を行い、空間全体を瞬時にジャストピントで捉えます 。2MP以上の高精細センサーのポテンシャルを100%引き出し、高速・高精度なAFを実現します [cite: 54]。
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--primary-green); margin-top: 0;">空間スキャンの新思想：CT断面撮像</h3>
+                    <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                        液体レンズは「スライス画像」を高速に連写し、ボケを排除して合成します。これにより、手前から奥まで全域ジャストピントの「空間データ」を生成します [cite: 60]。
+                    </p>
+
+                    <div style="margin-top: 30px;">
+                        <div style="background: #f8fafc; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #e2e8f0;">
+                            <h4 style="margin: 0 0 10px 0; color: var(--primary-green); display: flex; align-items: center;">
+                                <span style="background: var(--accent-gold); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; margin-right: 10px;">1</span>
+                                空間の完全把握
+                            </h4>
+                            <p style="margin: 0; font-size: 0.9rem; color: #64748b;">CTスキャンのように空間を完全に把握することが可能になり、従来の静止したピント合わせでは不可能だった検査領域をカバーします [cite: 61]。</p>
+                        </div>
+
+                        <div style="background: #f8fafc; border-radius: 12px; padding: 20px; border: 1px solid #e2e8f0;">
+                            <h4 style="margin: 0 0 10px 0; color: var(--primary-green); display: flex; align-items: center;">
+                                <span style="background: var(--accent-gold); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; margin-right: 10px;">2</span>
+                                3D積層検査（HBM等）
+                            </h4>
+                            <p style="margin: 0; font-size: 0.9rem; color: #64748b;">HBM等の積層内部の欠陥を特定。各層の断面を瞬時に切り取る「超高速DoF切り替え」が、新たな検査価値を創造します [cite: 63, 65]。</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 30px; font-weight: bold; color: #ef4444; font-size: 0.95rem;">
+                        <i class="fa-solid fa-circle-exclamation"></i> 従来方式：DoFを稼ぐために絞ると画像が暗くなり、スループットが劇的に低下します 。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
     <section>
         <div class="container">
             <h2 class="slide-title">シビアなWD（5mm〜7mm）への至近距離解像</h2>
